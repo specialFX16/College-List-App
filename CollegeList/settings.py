@@ -58,7 +58,7 @@ WSGI_APPLICATION = 'CollegeList.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': '/var/www/CollegeList/database/CollegeList.db',
     }
 }
 
@@ -80,3 +80,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/var/www/CollegeList/static'
